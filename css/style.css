@@ -294,3 +294,60 @@ table {
 td {
   border: 2px solid black;
 }
+
+.container-classificacao h2 {
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-container {
+  margin: 50px 50px 50px 50px;
+  background: linear-gradient(to left, #708090 50%, #ffffff 100%);
+  box-shadow: 2px 5px 25px black;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.table-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.classificacao {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.classificacao th,
+.classificacao td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.classificacao th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.classificacao tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.classificacao tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+.table-container {
+  position: relative;
+}
+
+#mostrar-mais {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 95%;
+  transform: translateX(-50%);
+}
