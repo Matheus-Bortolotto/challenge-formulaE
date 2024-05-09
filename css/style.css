@@ -85,6 +85,21 @@ img {
   cursor: pointer;
 }
 
+.saiba {
+  display: flex;
+  justify-content: end;
+  margin: 50px 50px 50px 50px;
+}
+
+.saiba button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
 .calendario-pistas {
   display: block;
 }
@@ -344,10 +359,111 @@ td {
   position: relative;
 }
 
+#corpo-tabela a {
+  color: #000;
+}
+
 #mostrar-mais {
-  display: flex;
   position: absolute;
+  display: inline-block;
   bottom: 0;
-  left: 95%;
+  margin-left: 87%;
   transform: translateX(-50%);
+  border: solid 2px black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#mostrar-menos {
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container-videos {
+  display: block;
+  margin: 50px 50px 50px 50px;
+  border: 5px solid #fff;
+  border-radius: 5px;
+}
+
+.containaer-videos-destaque {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containaer-videos-destaque p {
+  text-align: center;
+}
+
+.container-videos h2 {
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-videos {
+  background: linear-gradient(to left, #708090 50%, #ffffff 100%);
+}
+
+.footer-bg {
+  background: linear-gradient(to left, #708090 50%, #ffffff 100%);
+}
+
+.footer-bg p {
+  color: #000;
+}
+
+div.footer-contato img {
+  width: 100px;
+  height: auto;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 5fr 4fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer h3 {
+  margin-bottom: 32px;
+}
+
+.footer-contato ul {
+  margin-bottom: 32px;
+}
+
+.footer-contato li:nth-child(even):after {
+  content: "";
+  display: block;
+  max-width: 360px;
+  height: 2px;
+  background: var(--cor-11);
+  margin-top: 16px;
+}
+
+.footer li {
+  margin-bottom: 16px;
+}
+
+.footer-redes {
+  display: flex;
+  gap: 32px;
+}
+
+.footer-copy {
+  grid-column: 1/-1;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
