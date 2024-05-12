@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/login.css">
   <title>LOGIN</title>
@@ -43,12 +46,15 @@
       </nav>
     </div>
   </header>
-  <form>
-    <h3>LOGIN</h3>
-    <input type="text" placeholder="Login" id="login">
-    <input type="password" placeholder="senha" id="senha">
-    <input type="submit">
-  </form>
-
+  <main>
+    <div>
+      <form>
+        <h3>LOGIN</h3>
+        <input type="text" placeholder="Úsuario" id="usuario">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" id="btn-logar" onclick="logar(); return false">
+      </form>
+    </div>
+  </main>
   <script src="..//js/script.js"></script>
 </body>

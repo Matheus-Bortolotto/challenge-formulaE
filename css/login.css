@@ -1,18 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
 body {
   margin: 0px;
   padding: 0px;
-  background: linear-gradient(to left, #040034 50%, #0c009a 100%);
-  font-family: "Inconsolata", sans-serif;
+  background: linear-gradient(to top left, #6495ed 50%, #a9a9a9 100%);
+  font-family: "Open Sans", sans-serif;
 }
 
 p {
-  font-family: "Inconsolata", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #ffffff;
 }
 
 a {
-  font-family: "Inconsolata", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
   color: white;
 }
