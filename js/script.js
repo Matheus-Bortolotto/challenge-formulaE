@@ -73,7 +73,8 @@ botao.addEventListener("click", function logar() {
     }
   }
   if (validaLogin == true) {
-    location.href = "index.html";
+    window.location.assign = "index.html";
+    alert("Sucesso");
   } else {
     alert("Usuário ou senha incorretos");
   }

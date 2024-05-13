@@ -6,16 +6,13 @@ body {
   margin: 0px;
   padding: 0px;
   background: linear-gradient(to top left, #6495ed 50%, #a9a9a9 100%);
-  font-family: "Open Sans", sans-serif;
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
   color: #ffffff;
 }
 
 a {
-  font-family: "Open Sans", sans-serif;
   text-decoration: none;
   color: white;
 }
@@ -41,36 +38,4 @@ img {
   list-style: none;
   font-size: 20px;
   margin-left: auto;
-}
-
-.titulo {
-  display: flex;
-  justify-content: center;
-  color: #ffffff;
-}
-
-main {
-  padding: 20px;
-}
-section {
-  margin-bottom: 20px;
-  background: linear-gradient(to left, #708090 50%, #ffffff 100%);
-  border-radius: 5px;
-  padding: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-h2 {
-  color: #000000;
-}
-p {
-  font-size: 16px;
-  color: #000000;
-  line-height: 1.6;
-}
-
-.equipes a {
-  display: flex;
-  margin: auto 100px;
-  color: #4169e1;
 }
