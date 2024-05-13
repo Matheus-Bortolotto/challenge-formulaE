@@ -1,3 +1,17 @@
+const myObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const elements = document.querySelectorAll(".rolagem");
+
+elements.forEach((element) => myObserver.observe(element));
+
 document.addEventListener("DOMContentLoaded", function () {
   var tabela = document.getElementById("tabela-classificacao");
   var corpoTabela = document.getElementById("corpo-tabela");
@@ -79,3 +93,20 @@ botao.addEventListener("click", function logar() {
     alert("Usuário ou senha incorretos");
   }
 });
+
+// function enviarMensagem() {
+//   alert("Mensagem enviada com sucesso!");
+// }
+
+// document.getElementById("botaoEnviar").onclick = enviarMensagem;
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const botaoEnviar = document.querySelector(".botaoEnviar");
+
+//   botaoEnviar.addEventListener("click", function (event) {
+//     event.preventDefault(); // Evita o envio padrão do formulário
+
+//     // Exibe o alerta
+//     alert("Mensagem enviada com sucesso!");
+//   });
+// });
