@@ -94,19 +94,11 @@ botao.addEventListener("click", function logar() {
   }
 });
 
-// function enviarMensagem() {
-//   alert("Mensagem enviada com sucesso!");
-// }
+document.addEventListener("DOMContentLoaded", function () {
+  const boatoenviar = document.getElementById("boatoenviar");
 
-// document.getElementById("botaoEnviar").onclick = enviarMensagem;
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const botaoEnviar = document.querySelector(".botaoEnviar");
-
-//   botaoEnviar.addEventListener("click", function (event) {
-//     event.preventDefault(); // Evita o envio padrão do formulário
-
-//     // Exibe o alerta
-//     alert("Mensagem enviada com sucesso!");
-//   });
-// });
+  boatoenviar.addEventListener("click", function (event) {
+    event.preventDefault();
+    alert("Mensagem enviada com sucesso!");
+  });
+});

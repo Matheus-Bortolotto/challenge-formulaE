@@ -13,14 +13,14 @@ p {
   color: #ffffff;
 }
 
-a {
+header a {
   text-decoration: none;
   color: white;
 }
 img {
   max-width: 100%;
   height: 100px;
-  display: block;
+  display: flex;
   border-radius: 5px;
 }
 
@@ -40,8 +40,7 @@ img {
 
 .menu {
   display: flex;
-  width: 100%;
-  height: 100%;
+  flex-wrap: wrap;
   background: linear-gradient(to right, #000000 50%, #2149d9 100%);
 }
 
@@ -53,7 +52,7 @@ img {
   text-decoration: none;
   list-style: none;
   font-size: 20px;
-  margin-left: auto;
+  margin-left: 400px;
 }
 
 .noticia-container {
@@ -73,15 +72,18 @@ img {
 
 .container-imagem {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 40px;
   justify-content: space-between;
 }
 
 .imagem1 {
+  display: flex;
+  flex-direction: row;
   justify-content: left;
   width: 500px;
   height: auto;
-  margin-left: 400px;
   transition: trasnform 0.3s ease;
 }
 
@@ -91,10 +93,13 @@ img {
 }
 
 .imagem2 {
-  justify-content: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 100%;
   width: 500px;
   height: auto;
-  margin-right: 350px;
   transition: trasnform 0.3s ease;
 }
 
@@ -391,7 +396,7 @@ td {
   border: solid 2px black;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 #mostrar-menos {
@@ -403,26 +408,39 @@ td {
 }
 
 .container-videos {
-  display: block;
-  margin: 50px 50px 50px 50px;
+  margin: 50px;
   border: 5px solid #fff;
   border-radius: 5px;
-}
-
-.containaer-videos-destaque {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  align-items: center;
+  background: linear-gradient(to left, #708090 50%, #ffffff 100%);
+  padding: 20px;
   box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.containaer-videos-destaque p {
+.container-videos h2 {
+  color: #ffffff;
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-videos-destaque {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video {
+  max-width: 100%;
+  text-align: center;
+}
+
+.video iframe {
+  max-width: 100%;
+}
+
+.video p {
+  margin-top: 10px;
 }
 
 .containaer-videos-destaque img:nth-child(2) {
@@ -433,19 +451,7 @@ td {
   transition-delay: 700ms;
 }
 
-.container-videos h2 {
-  display: flex;
-  color: #ffffff;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-videos {
-  background: linear-gradient(to left, #708090 50%, #ffffff 100%);
-}
-
 .footer-bg {
-  margin: 50px 50px 50px 50px;
   background: linear-gradient(to left, #708090 50%, #ffffff 100%);
 }
 

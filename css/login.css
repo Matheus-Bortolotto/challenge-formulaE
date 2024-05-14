@@ -1,28 +1,27 @@
 * {
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0px;
   padding: 0px;
   background: linear-gradient(to top left, #6495ed 50%, #a9a9a9 100%);
-  font-family: "Open Sans", sans-serif;
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
   color: #ffffff;
 }
 
-a {
-  font-family: "Open Sans", sans-serif;
+header a {
   text-decoration: none;
   color: white;
 }
 img {
   max-width: 100%;
   height: 100px;
-  display: block;
+  display: flex;
+  border-radius: 5px;
 }
 
 .rolagem {
@@ -41,8 +40,7 @@ img {
 
 .menu {
   display: flex;
-  width: 100%;
-  height: 100%;
+  flex-wrap: wrap;
   background: linear-gradient(to right, #000000 50%, #2149d9 100%);
 }
 
@@ -54,7 +52,7 @@ img {
   text-decoration: none;
   list-style: none;
   font-size: 20px;
-  margin-left: auto;
+  margin-left: 400px;
 }
 
 * {
@@ -78,11 +76,16 @@ input {
 }
 
 .footer-bg {
-  margin: 50px 50px 50px 50px;
   background: linear-gradient(to left, #708090 50%, #ffffff 100%);
 }
 
-.footer-bg p {
+.footer-bg {
+  background: linear-gradient(to left, #708090 50%, #ffffff 100%);
+}
+
+.footer-bg p,
+a,
+li {
   color: #000;
 }
 
@@ -124,7 +127,9 @@ div.footer-contato img {
   display: flex;
   gap: 32px;
 }
-
+.footer a:hover {
+  color: #ffff;
+}
 .footer-copy {
   grid-column: 1/-1;
   margin-top: 40px;

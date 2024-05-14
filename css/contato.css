@@ -1,5 +1,6 @@
 * {
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,20 +13,20 @@ p {
   color: #ffffff;
 }
 
-a {
+header a {
   text-decoration: none;
   color: white;
 }
 img {
   max-width: 100%;
   height: 100px;
-  display: block;
+  display: flex;
+  border-radius: 5px;
 }
 
 .menu {
   display: flex;
-  width: 100%;
-  height: 100%;
+  flex-wrap: wrap;
   background: linear-gradient(to right, #000000 50%, #2149d9 100%);
 }
 
@@ -37,7 +38,7 @@ img {
   text-decoration: none;
   list-style: none;
   font-size: 20px;
-  margin-left: auto;
+  margin-left: 400px;
 }
 
 .rolagem {
@@ -96,6 +97,7 @@ img {
 .contato {
   display: grid;
   grid-template-columns: 5fr 7fr;
+  margin-bottom: 100px;
 }
 
 .contato-dados,
@@ -336,7 +338,6 @@ img {
 }
 
 .footer-bg {
-  margin: 50px 50px 50px 50px;
   background: linear-gradient(to left, #708090 50%, #ffffff 100%);
 }
 
