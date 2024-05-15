@@ -93,12 +93,3 @@ botao.addEventListener("click", function logar() {
     alert("Usuário ou senha incorretos");
   }
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  const boatoenviar = document.getElementById("boatoenviar");
-
-  boatoenviar.addEventListener("click", function (event) {
-    event.preventDefault();
-    alert("Mensagem enviada com sucesso!");
-  });
-});
