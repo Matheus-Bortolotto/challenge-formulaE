@@ -57,39 +57,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
   mostrarMenosBtn.addEventListener("click", mostrarMenosLinhas);
 });
-
-const usuarios = [
-  {
-    login: "matheus",
-    pass: "matheus",
-  },
-  {
-    login: "luan",
-    pass: "luan",
-  },
-  {
-    login: "admin",
-    pass: "admin",
-  },
-];
-
-let botao = document.getElementById("btn-logar");
-
-botao.addEventListener("click", function logar() {
-  let pegaUsuario = document.getElementById("usuario").value;
-  let pegaSenha = document.getElementById("senha").value;
-  let validaLogin = false;
-
-  for (let i in usuarios) {
-    if (pegaUsuario == usuarios[i].login && pegaSenha == usuarios[i].pass) {
-      validaLogin = true;
-      break;
-    }
-  }
-  if (validaLogin == true) {
-    window.location.assign = "index.html";
-    alert("Sucesso");
-  } else {
-    alert("Usuário ou senha incorretos");
-  }
-});

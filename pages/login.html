@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/cadastre.css">
   <title>LOGIN</title>
 </head>
 
@@ -36,7 +36,7 @@
             <a href="areaDeApostas.html">LOJA</a>
           </li>
           <li>
-            <a href="aovivo.html">AO VIVO</a>
+            <a href="..//pages/aovivo.html">AO VIVO</a>
           </li>
           <li>
             <a href="../pages/contato.html">CONTATO</a>
@@ -46,13 +46,38 @@
     </div>
   </header>
   <main class="rolagem">
-    <div>
-      <form>
-        <h3>LOGIN</h3>
-        <input type="text" placeholder="Úsuario" id="usuario">
-        <input type="password" placeholder="Senha" id="senha">
-        <input type="submit" id="btn-logar" onclick="logar(); return false">
-      </form>
+    <div class="container">
+      <div class="card">
+        <h1>Entrar</h1>
+
+        <div id="msgError"></div>
+
+        <div class="label-float">
+          <input type="text" id="usuario" paceholder="" required />
+          <label id="userLabel" for="usuario">Usuario</label>
+        </div>
+
+        <div class="label-float">
+          <input type="password" id="senha" paceholder="" required />
+          <label id="senhaLabel" for="senha">Senha</label>
+          <i class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+
+        <div class="justify-center">
+          <button onclick="entrar()">Entrar</button>
+        </div>
+
+        <div class="justify-center">
+          <hr />
+        </div>
+
+        <p>
+          Não tem uma conta?
+          <a href="..//pages/cadastre.html">
+            Cadastre-se
+          </a>
+        </p>
+      </div>
     </div>
   </main>
   <footer class="footer-bg rolagem">
@@ -86,7 +111,7 @@
               <a href="times.html">TIMES</a>
             </li>
             <li>
-              <a href="corridas.html">CORRIDAS</a>
+              <a href="..//pages/corridas.html">CORRIDAS</a>
             </li>
             <li>
               <a href="noticias.html">NOTÍCIAS</a>
@@ -98,10 +123,10 @@
               <a href="areaDeApostas.html">LOJA</a>
             </li>
             <li>
-              <a href="aovivo.html">AO VIVO</a>
+              <a href="..//pages/aovivo.html">AO VIVO</a>
             </li>
             <li>
-              <a href="contatos.html">CONTATO</a>
+              <a href="..//pages/contato.html">CONTATO</a>
             </li>
           </ul>
         </nav>
@@ -109,5 +134,5 @@
       <p class="footer-copy ">FÓRMULA E © Alguns direitos reservados.</p>
     </div>
   </footer>
-  <script src="..//js/script.js"></script>
+  <script src="..//js/login.js"></script>
 </body>
