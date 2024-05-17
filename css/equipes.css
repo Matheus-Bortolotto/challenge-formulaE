@@ -1,0 +1,157 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.team-profile {
+    width: 80%;
+    margin: 20px auto;
+    background: linear-gradient(to left, #708090 50%, #ffffff 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.team-logo {
+    max-height: 50px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.location img {
+    margin-right: 10px;
+    height: 20px;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-info {
+    width: 55%;
+}
+
+.team-info img {
+    width: 1200px;
+    height: auto;
+}
+
+.team-car {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.team-details {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+}
+
+.team-details td {
+    padding: 10px 100px;
+    border-bottom: 50px solid rgba(255, 0, 0, 0);
+}
+
+.season-stats {
+    margin-bottom: 20px;
+}
+
+.season-stats h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats-grid p{
+    color: black;
+}
+
+.stats-grid div {
+    text-align: center;
+    width: 30%;
+    color: black;
+    border: 1px solid;
+
+}
+
+.drivers {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.driver {
+    text-align: center;
+}
+
+.driver img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.driver-number {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.driver-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+.historical-stats {
+    margin-top: 20px;
+}
+
+.historical-stats h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.historical-stats .stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.historical-stats .stats-grid div {
+    text-align: center;
+    width: 23%;
+    margin-bottom: 20px;
+    border: 1px solid;
+}
+
+.historical-stats .stats-grid p {
+color: black;
+}
