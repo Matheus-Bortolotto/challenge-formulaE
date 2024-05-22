@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/cadastre.css">
+  <title>CADASTRE-SE</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <nav class="menu">
+        <img src="../img/logo.png" alt="Logo FÓRMULA E">
+        <ul class="nav-menu">
+          <li>
+            <a href="../index.html">HOME</a>
+          </li>
+          <li>
+            <a href="..//pages/times.html">TIMES</a>
+          </li>
+          <li>
+            <a href="../pages/corridas.html">CORRIDAS</a>
+          </li>
+          <li>
+            <a href="noticias.html">NOTÍCIAS</a>
+          </li>
+          <li>
+            <a href="areaDoFa.html">JOGO</a>
+          </li>
+          <li>
+            <a href="areaDeApostas.html">LOJA</a>
+          </li>
+          <li>
+            <a href="..//pages/aovivo.html">AO VIVO</a>
+          </li>
+          <li>
+            <a href="../pages/contato.html">CONTATO</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="rolagem">
+    <div class="container">
+      <div class="card">
+        <h1>Cadastrar</h1>
+
+        <div id="msgError"></div>
+        <div id="msgSuccess"></div>
+
+        <div class="label-float">
+          <input type="text" id="nome" placeholder=" " required />
+          <label id="labelNome" for="nome">Nome</label>
+        </div>
+
+        <div class="label-float">
+          <input type="text" id="usuario" placeholder=" " required />
+          <label id="labelUsuario" for="usuario">Usuário</label>
+        </div>
+
+        <div class="label-float">
+          <input type="password" id="senha" placeholder=" " required />
+          <label id="labelSenha" for="senha">Senha</label>
+          <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+
+        <div class="label-float">
+          <input type="password" id="confirmSenha" placeholder=" " required />
+          <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+          <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+
+        <div class="justify-center">
+          <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-bg rolagem">
+      <div class="footer container">
+        <div class="container-logo-img">
+          <img src="..//img/logo.png" width="136" height="32" alt="logo FÓRMULA E">
+        </div>
+        <div class="footer-contato">
+          <h3 class="">Contato</h3>
+          <ul class="tel-contato">
+            <li><a href="tel:+552199999999">+55 11 9999-9999</a></li>
+            <li><a href="mailto:contato@bikcraft.com">contato@formuale.com</a></li>
+          </ul>
+          <div class="footer-redes">
+            <a href="">
+              <img src="..//img/instalogo.png" width="32" height="32" alt="Instagram">
+            </a>
+            <a href="">
+              <img src="..//img/facelogo.png" width="32" height="32" alt="Facebook">
+            </a>
+            <a href="">
+              <img src="..//img/youtubelogo.png" width="32" height="32" alt="Youtube">
+            </a>
+          </div>
+        </div>
+        <div class="footer-informacoes">
+          <h3 class="">INFORMAÇÕES</h3>
+          <nav>
+            <ul class="">
+              <li>
+                <a href="..//pages/times.html">TIMES</a>
+              </li>
+              <li>
+                <a href="..//pages/corridas.html">CORRIDAS</a>
+              </li>
+              <li>
+                <a href="noticias.html">NOTÍCIAS</a>
+              </li>
+              <li>
+                <a href="areaDoFa.html">JOGO</a>
+              </li>
+              <li>
+                <a href="areaDeApostas.html">LOJA</a>
+              </li>
+              <li>
+                <a href="..//pages/aovivo.html">AO VIVO</a>
+              </li>
+              <li>
+                <a href="..//pages/contato.html">CONTATO</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <p class="footer-copy ">FÓRMULA E © Alguns direitos reservados.</p>
+      </div>
+    </footer>
+  </main>
+  <script src="..//js/cadastre.js"></script>
+</body>

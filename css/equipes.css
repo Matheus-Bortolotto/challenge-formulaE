@@ -1,0 +1,264 @@
+
+* {
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  p {
+    color: #ffffff;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+  img {
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    border-radius: 5px;
+  }
+  
+  .rolagem {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+  }
+  
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+  }
+  
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #000000 50%, #2149d9 100%);
+  }
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    margin-left: 400px;
+  }
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* .team-profile {
+    width: 80%;
+    margin: 20px auto;
+    background: linear-gradient(to left, #708090 50%, #ffffff 100%);
+    box-shadow: 10px 10px 70px rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+} */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.team-logo {
+    max-height: 100%;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.location img {
+    margin-right: 10px;
+    height: 20px;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-info {
+    width: 55%;
+}
+
+.team-info img {
+    width: 1200px;
+    height: auto;
+}
+
+.team-car {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.team-details {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+}
+
+.team-details td {
+    padding: 10px 100px;
+    border-bottom: 50px solid rgba(255, 0, 0, 0);
+    color: white;
+}
+
+.season-stats {
+    margin-bottom: 20px;
+}
+
+.season-stats h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats-grid p{
+    color: black;
+}
+
+.stats-grid div {
+    text-align: center;
+    width: 30%;
+    color: black;
+    border: 1px solid;
+}
+
+.drivers {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.driver {
+    text-align: center;
+}
+
+.driver img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.driver-number {
+    font-size: 3em;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.driver-name {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+.historical-stats {
+    margin-top: 20px;
+}
+
+.historical-stats h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.historical-stats .stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.historical-stats .stats-grid div {
+    text-align: center;
+    width: 23%;
+    margin-bottom: 20px;
+    border: 1px solid;
+}
+
+.historical-stats .stats-grid p {
+color: black;
+}
+
+.footer {
+    background: linear-gradient(to left, #708090 50%, #ffffff 100%);
+  }
+  
+  .footer-bg p,
+  a,
+  li {
+    color: #000;
+  }
+  
+  div.footer-contato img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .footer {
+    display: grid;
+    grid-template-columns: 3fr 5fr 4fr;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .footer h3 {
+    margin-bottom: 32px;
+  }
+  
+  .footer-contato ul {
+    margin-bottom: 32px;
+  }
+  
+  .footer-contato li:nth-child(even):after {
+    content: "";
+    display: block;
+    max-width: 360px;
+    height: 2px;
+    background: var(--cor-11);
+    margin-top: 16px;
+  }
+  
+  .footer li {
+    margin-bottom: 16px;
+  }
+  
+  .footer-redes {
+    display: flex;
+    gap: 32px;
+  }
+  .footer a:hover {
+    color: #ffff;
+  }
+  .footer-copy {
+    grid-column: 1/-1;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
