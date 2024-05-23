@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Memoria</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/3132/3132772.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="..//css/main.css" />
+    <link rel="stylesheet" href="..//css/card.css" />
+    <link rel="stylesheet" href="..//css/responsive.css">
+    <link rel="stylesheet" href="..//css/win.css" /><!--Estilo da tela de vitória-->
+
+  </head>
+  <body>
+    <header>
+      <h1>JOGO DA MEMÓRIA</h1>
+      <nav>
+        <!--<a href="/">DECKS</a>
+        <a href="/">SOBRE</a>-->
+      </nav>
+    </header>
+    <!--ALTERAÇÃO* Essa div vai ser exibida quando o jogador vencer a partida!-->
+    <div id="vitoria">
+      <div id="container">
+        <h1>Parabéns!</h1>
+        <p>Você encontrou todos os pares com</p>
+        <h2><span id="movimentosvitoria">0</span> ERROS</h2>
+        <a href="..//pages/jogo.html">Jogar denovo</a>
+      </div>
+    </div>
+    <!--FIM-ALTERAÇÃO*-->
+    <section id="responsivo">
+      <h2>Erros <span id="movimentos2">0</span></h2>
+      <!-- <button id="btn-mudartema">Mudar tema</button>
+          <button id="btn-reiniciar">Reiniciar</button> -->
+      <a href="..//pages/jogo.html">Reiniciar</a>
+    </section>
+
+    <div class="corpo">
+      <section id="esq">
+        <h2>Erros <span id="movimentos">0</span></h2>
+        <h2>Jake Dennis - Andreti Autosport</h2>
+        <h2>JAKE - Avalanche Andretti</h2>
+        <h2>Pascal - TAG HEUR Porsche</h2>
+        <h2>Oliver - Nissan</h2>
+        <h2>Lucas - ROKiT Venturi Racing</h2>
+        <h2>Stoffel - Mercedez </h2>
+        <h2>Edoardo - MAHINDRA</h2>
+        <!-- <button id="btn-mudartema">Mudar tema</button>
+            <button id="btn-reiniciar">Reiniciar</button> -->
+        <a href="..//pages/jogo.html">Reiniciar</a>
+      </section>
+      <section class="jogo">
+        <div class="card" data-nome = "jake">
+          <img
+            class="frente"
+            src="..//img/pilotos/jake-mclaren.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="..//img/fe.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "jake">
+          <img
+            class="frente"
+            src="..//img/McLaren_Racing_logo.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="..//img/fe.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "pascal">
+          <img
+            class="frente"
+            src="..//img/pilotos/pascal-porsche.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="..//img/fe.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "pascal">
+          <img
+            class="frente"
+            src="..//img/porschelogo.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="..//img/fe.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "oliver">
+          <img
+            class="frente"
+            src="..//img/oliver.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="..//img/fe.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "oliver">
+          <img
+            class="frente"
+            src="..//img/nissan-logo.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="..//img/fe.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "lucas">
+          <img
+            class="frente"
+            src="..//img/pilotos/lucas-abt.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="..//img/fe.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "lucas">
+          <img
+            class="frente"
+            src="..//img/abtlogo.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="..//img/fe.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "stoffel">
+          <img
+            class="frente"
+            src="..//img/pilotos/stoffel-ds.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="..//img/fe.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "stoffel">
+          <img
+            class="frente"
+            src="..//img/dslogo.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="..//img/fe.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "edoardo">
+          <img
+            class="frente"
+            src="..//img/pilotos/edoardo-mahindra.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="..//img/fe.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "edoardo">
+          <img
+            class="frente"
+            src="..//img/mahindralogo.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="..//img/logo.png"
+            alt="card"
+          />
+        </div>
+        
+      </section>
+      <section id="dir"></section>
+    </div>
+    <footer class="footer">
+     <p>
+        Lorem, ipsum dolor.
+     </p>
+     <br>
+     <p>Lorem, ipsum dolor.</p>
+     <br>
+     <p>Lorem, ipsum.</p>
+    </footer>
+    <script src="..//js/jogo.js"></script>
+    <script src="..//js/jogo2.js"></script>
+  </body>
+</html>
