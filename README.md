@@ -2,6 +2,18 @@
 
 Este é o repositório do projeto do site da Fórmula E, uma plataforma digital dinâmica e envolvente que oferece aos fãs uma experiência completa e imersiva no mundo emocionante do automobilismo elétrico.
 
+## Integrantes:
+
+RM:554952 - André flores
+
+RM: 558537 - Luan Ramos
+
+RM: 555189 - Matheus Bortolotto
+
+RM: 556930 - Matheus Ricciotti
+
+RM:556892 - Guilherme Lunghini
+
 ## Funcionalidades
 
 - **Manipulação Dinâmica de Elementos e Eventos:** Utilizando JavaScript para interagir com elementos HTML e responder a eventos de usuário.
