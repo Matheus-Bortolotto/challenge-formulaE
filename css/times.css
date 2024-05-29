@@ -42,21 +42,24 @@ img {
   display: flex;
   flex-wrap: wrap;
   background: linear-gradient(to right, #000000 50%, #2149d9 100%);
+  align-items: center;
+  padding: 10px;
 }
 
 .nav-menu {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 40px;
   align-items: center;
   text-decoration: none;
   list-style: none;
   font-size: 20px;
-  margin-left: 400px;
+  margin-left: auto;
 }
 
 .container-times::after {
-  content: '';
+  content: "";
   position: absolute;
   margin-top: 50px;
   top: 0;
@@ -74,8 +77,6 @@ img {
   height: 100%;
 }
 
-
-
 .container {
   position: relative;
   z-index: 1;
@@ -87,17 +88,17 @@ img {
 }
 
 .container .card {
-	position: relative;
-	width: 1550px;
-	height: 400px;
-	background: linear-gradient(to left, #708090 50%, #ffffff 100%);
-	margin: 20px;
-	box-shadow: 50px 10px 75px rgba(144, 0, 255, 5.0);
-	border-radius: 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	backdrop-filter: blur(10px);
+  position: relative;
+  width: 1550px;
+  height: 400px;
+  background: linear-gradient(to left, #708090 50%, #ffffff 100%);
+  margin: 20px;
+  box-shadow: 50px 10px 75px rgba(144, 0, 255, 5);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
 }
 
 .container .card .content {
@@ -147,9 +148,9 @@ img {
 }
 
 .container .card .sci {
-	position: absolute;
-	bottom: -30px;
-	display: flex;
+  position: absolute;
+  bottom: -30px;
+  display: flex;
 }
 
 .container .card .sci li {
@@ -166,18 +167,18 @@ img {
 }
 
 .container .card .sci li p {
-	color: #000000;
-	font-size: 20px;
+  color: #000000;
+  font-size: 20px;
 }
 .saiba-mais button {
-	width: 120px;
-	height: 30px;
-	margin-bottom: 10px;
-	border: none;
-	cursor: pointer;
-	border-radius: 10px;
-	font-size: 18px;
-	background: linear-gradient(to right, #708090 50%, #ffffff 100%);
+  width: 120px;
+  height: 30px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+  background: linear-gradient(to right, #708090 50%, #ffffff 100%);
 }
 
 .footer-bg {
