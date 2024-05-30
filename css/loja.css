@@ -207,6 +207,12 @@ div.footer-contato img {
   background-color: white;
   margin-top: 50px;
   padding: 50px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 23%,
+    rgba(135, 203, 217, 1) 100%
+  );
 }
 
 .commerce {
@@ -219,6 +225,12 @@ div.footer-contato img {
   height: 150px;
   background-color: white;
   margin-top: 50px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 23%,
+    rgba(135, 203, 217, 1) 100%
+  );
 }
 
 .teams img {
@@ -266,18 +278,135 @@ div.footer-contato img {
 }
 
 .a {
+  margin: 0 auto;
   height: 300px;
   width: 300px;
-  background-color: red;
+  overflow: hidden;
 }
 .b {
   height: 100px;
   width: 300px;
-  background-color: green;
+  background-color: #0c009a;
+  border-radius: 5px;
 }
 
 .produtos {
   display: flex;
   justify-content: space-around;
   padding: 25px;
+}
+
+.slide {
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+.slides {
+  width: 400%;
+  height: 1000px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slided{
+  width: 25%;
+  position: relative;
+  transition: 1s;
+}
+
+.slided img{
+  width: 1000px;
+  height: 40%;
+}
+
+.manual-nav{
+  position: absolute;
+  width: 800px;
+  margin-top: -580px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: blue;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+
+.navigation-auto div{
+  margin-top: 60px;
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .autobtn1{
+  background-color: blue;
+}
+#radio2:checked ~ .navigation-auto .autobtn2{
+  background-color: blue;
+}
+#radio3:checked ~ .navigation-auto .autobtn3{
+  background-color: blue; 
+}
+
+.a img{
+  height: 300px;
+  width: 300px;
+}
+
+.a img:hover{
+  height: 300px;
+  width: 300px;
+  transition: 0.5s;
+}
+
+.b p {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.b p:hover{
+  color:rgba(135, 203, 217, 1);
 }
