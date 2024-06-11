@@ -414,3 +414,86 @@ div.footer-contato img {
 .b p:hover{
   color:rgba(135, 203, 217, 1);
 }
+
+.store-bgg {
+  height: 800px;
+  width: 1200px;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  padding: 50px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 23%,
+    rgba(135, 203, 217, 1) 100%
+  );
+}
+
+.product {
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.igm {
+  width: 500px;
+  height: 500px;
+}
+
+#coupon {
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #2149d9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0c009a;
+}
+
+#discounted-price {
+  margin-top: 20px;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.botaocomprar{
+  font-size: 50px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  height: 80px;
+  border-radius: 20px;
+  padding-top: 10px;
+  margin-top: 100px;
+}
+
+.botaocomprar:hover{
+  background-color: rgb(22, 105, 22);
+}
+
+.textoproduto{
+  font-size: 50px;
+  color: black;
+  margin-bottom: 50px;
+}
+
+#price{
+  font-size: 50px;
+  color: black;
+}
