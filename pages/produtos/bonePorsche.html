@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/loja.css">
+    <title>Produto</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+          <nav class="menu">
+            <img src="../../img/logo.png" alt="Logo FÓRMULA E">
+            <ul class="nav-menu">
+              <li><a href="../../index.html">HOME</a></li>
+              <li><a href="../../pages/times.html">TIMES</a></li>
+              <li><a href="../../pages/corridas.html">CORRIDAS</a></li>
+              <li><a href="../../pages/noticias.html">NOTÍCIAS</a></li>
+              <li><a href="../../pages/jogo.html">JOGO</a></li>
+              <li><a href="../../pages/contato.html">CONTATO</a></li>
+              <li><a href="../../pages/login.html">LOGIN</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <section class="commerce">
+        <div class="store-bgg">
+            <div class="product">
+                <div>
+                    <img src="../../img/produtosloja/boneporsche.png" alt="Boné Porsche" class="igm">
+                </div>
+                <div>
+                    <p class="textoproduto">Porsche Motorsport <br>2023 Formula E Cap</p>
+                    <p id="price">R$ 100,00</p>
+                    <div>
+                        <input type="text" id="coupon" placeholder="Digite seu cupom">
+                        <button onclick="applyDiscount()">Aplicar Cupom</button>
+                    </div>
+                    <p id="discounted-price" style="display:none;">Preço com desconto: R$ <span id="discounted-value"></span></p>
+                    <div>
+                        <p class="botaocomprar" id="buy-button">Comprar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../../js/loja.js"></script>
+    <script src="../../js/comprar.js"></script>
+</body>
+</html>
+
