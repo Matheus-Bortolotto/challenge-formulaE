@@ -1,18 +1,17 @@
 let count = 1;
-document.getElementById("radio1").checked = true
+document.getElementById("radio1").checked = true;
 
 setInterval(function(){
     nextImage();
-}, 3000)
+}, 3000);
 
 function nextImage(){
     count++;
-    if(count>3){
-        count=1;
+    if(count > 3){
+        count = 1;
     }
 
-    document.getElementById("radio"+count).checked = true;
-
+    document.getElementById("radio" + count).checked = true;
 }
 
 function applyDiscount() {
@@ -21,11 +20,20 @@ function applyDiscount() {
     const discountedPriceElement = document.getElementById('discounted-price');
     const discountedValueElement = document.getElementById('discounted-value');
     
-    const originalPrice = 100;
     const validCoupon = 'mahindra10';
-    
+    const priceText = priceElement.textContent || priceElement.innerText;
+    const price = parseFloat(priceText.replace('R$', '').replace(',', '.').trim());
+
     if (couponInput === validCoupon) {
-        const discountedPrice = originalPrice * 0.9;
+        let discountedPrice;
+        if (price === 150) {
+            discountedPrice = price * 0.85; // 15% de desconto
+        } else if (price === 100) {
+            discountedPrice = price * 0.9; // 10% de desconto
+        } else {
+            alert('Preço não elegível para desconto.');
+            return;
+        }
         discountedValueElement.textContent = discountedPrice.toFixed(2);
         discountedPriceElement.style.display = 'block';
     } else {
