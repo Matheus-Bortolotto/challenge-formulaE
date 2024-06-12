@@ -24,23 +24,6 @@ img {
   border-radius: 5px;
 }
 
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  background: linear-gradient(to right, #000000 50%, #2149d9 100%);
-}
-
-.nav-menu {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  align-items: center;
-  text-decoration: none;
-  list-style: none;
-  font-size: 20px;
-  margin-left: 400px;
-}
-
 .rolagem {
   opacity: 0;
   filter: blur(15px);
@@ -53,6 +36,26 @@ img {
   filter: blur(0);
   transform: translateX(0);
   transition: all 2s;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #000000 50%, #2149d9 100%);
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  margin-left: auto;
 }
 
 .header-bg {

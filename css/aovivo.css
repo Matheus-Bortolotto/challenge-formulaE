@@ -42,17 +42,20 @@ img {
   display: flex;
   flex-wrap: wrap;
   background: linear-gradient(to right, #000000 50%, #2149d9 100%);
+  align-items: center;
+  padding: 10px;
 }
 
 .nav-menu {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 40px;
   align-items: center;
   text-decoration: none;
   list-style: none;
   font-size: 20px;
-  margin-left: 400px;
+  margin-left: auto;
 }
 
 /* .container {
