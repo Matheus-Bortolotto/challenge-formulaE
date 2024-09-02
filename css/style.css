@@ -700,6 +700,10 @@ div.footer-contato img {
     text-align: center;
     padding: 10px;
   }
+
+  .footer-informacoes {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
