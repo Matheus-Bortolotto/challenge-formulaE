@@ -20,3 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Mensagem enviada com sucesso!");
   });
 });
+
+function toggleMenu() {
+  const menuContent = document.getElementById("nav-menu-mobile-content");
+  if (menuContent.style.display === "flex") {
+    menuContent.style.display = "none";
+  } else {
+    menuContent.style.display = "flex";
+  }
+}

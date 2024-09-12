@@ -138,3 +138,12 @@ btnConfirm.addEventListener("click", () => {
     inputConfirmSenha.setAttribute("type", "password");
   }
 });
+
+function toggleMenu() {
+  const menuContent = document.getElementById("nav-menu-mobile-content");
+  if (menuContent.style.display === "flex") {
+    menuContent.style.display = "none";
+  } else {
+    menuContent.style.display = "flex";
+  }
+}
