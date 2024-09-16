@@ -49,6 +49,7 @@ img {
   background: linear-gradient(to right, #000000 50%, #2149d9 100%);
   align-items: center;
   padding: 10px;
+  position: relative;
 }
 
 .nav-menu {
@@ -111,19 +112,6 @@ img {
 
 .nav-menu-mobile-content.active {
   display: flex;
-}
-
-
-.nav-menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
-  text-decoration: none;
-  list-style: none;
-  font-size: 20px;
-  margin-left: auto;
 }
 
 .corpo {
@@ -631,6 +619,36 @@ button:hover {
   padding-bottom: 20px;
 }
 
+.product {
+  flex-direction: column;
+  align-items: center;
+}
+
+.igm {
+  max-width: 300px;
+  margin: 0 0 15px 0;
+}
+
+.textoproduto {
+  font-size: 35px;
+  text-align: center;
+}
+
+#price {
+  font-size: 30px;
+  text-align: center;
+}
+
+#coupon{
+  width: 100%;
+  text-align: center;
+}
+
+.botaocomprar {
+  font-size: 30px;
+  width: 100%;
+}
+
 }
 @media (max-width: 480px) {
   .nav-menu {
@@ -708,6 +726,41 @@ button:hover {
    display: none;
   }
   
+
+  .store-bgg {
+    padding: 20px;
+    margin-top: 30px;
+    height: auto; /* Ajusta a altura conforme o conteúdo */
+  }
+
+  .product {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .igm {
+    max-width: 200px;
+  }
+
+  .textoproduto {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  #price {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  #coupon, button {
+    width: 100%;
+  }
+
+  .botaocomprar {
+    font-size: 25px;
+    margin-top: 30px;
+    width: 100%;
+  }
 
   .footer {
     flex-direction: column;
